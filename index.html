@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css\styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="assets/logo.png" alt="logo" class="logo-image">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="home">Home</a></li>
+                <li><a href="profile">Profile</a></li>
+                <li><a href="portofolio">Portofolio</a></li>
+                <li><a href="message us">Message Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div id="welcome-container">
+    </div>
+    <div id="image-slider" class="slider">
+        <img src="assets/gambar1.jpg" alt="gambar 1" class="slide">
+        <img src="assets/gambar2.jpg" alt="gambar 2" class="slide">
+        <img src="assets/gambar3.jpg" alt="gambar 3" class="slide">
+        <button class="prev" id="prev-btn">&#10094;</button>
+        <button class="next" id="next-btn">&#10095;</button>
+    </div>
+        <div class="profile-container">
+            <h1>Portofolio</h1>
+            <div class="project-card">
+                <img src="assets/gambar1.jpg" alt="Project 1">
+                <div class="project-title">Medan</div>
+                <div class="project-description">
+                    Kota yang sangat unik pergaulan nya
+                </div>
+            </div>
+    
+            <div class="project-card">
+                <img src="assets/gambar2.jpg" alt="Project 2">
+                <div class="project-title">Bandung</div>
+                <div class="project-description">
+                    Sangat indah kotanya
+                </div>
+            </div>
+    
+            <div class="project-card">
+                <img src="assets/gambar3.jpg" alt="Project 3">
+                <div class="project-title">Kalimatan</div>
+                <div class="project-description">
+                    Sangat cantik kotanya
+                </div>
+            </div>
+        </div>
+    <br>
+        <div class="profile">
+            <h2 class="profile-title">Our Profile</h2>
+            <div class="profile-info">
+                <strong>Sejarah:</strong> Perusahan Tokopedia berdiri pada tanggal 17 agustus 2009.
+            </div>
+            <div class="profile-info">
+                <strong>Visi:</strong> Perusahan Tokopedia melakukan pekerjaaannya menjadi kreati dan inovatif.
+            </div>
+            <div class="profile-info">
+                <strong>Misi:</strong> Menjadi orang yang bertanggung jawab atas tindakannya.
+            </div>
+        </div>
+    <br>
+    <section class="message-container">
+        <h1>Message Us</h1>
+        <div class="contact-info">
+          <i class="fas fa-phone"></i>
+          <span>+6282273629041</span>
+          <br>
+          <i class="fas fa-envelope"></i>
+          <span>riyando15082003@gmail.com</span>
+          <br>
+          <div class="social-media">
+            <a href="https://www.instagram.com/riyando_rgg/" target="_blank">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://web.facebook.com/riando.rajaguguk/" target="_blank">
+              <i class="fab fa-facebook"></i>
+            </a>
+          </div>
+        </div>
+        <div class="form-container">
+            <form id="messageForm">
+                <label for="name">Nama:</label>
+                <input type="text" id="name" name="name" required>
+    
+                <label for="birthdate">Tanggal Lahir:</label>
+                <input type="date" id="birthdate" name="birthdate" required>
+    
+                <label for="gender">Jenis Kelamin:</label>
+                <div class="radio-group">
+                <input type="radio" id="male" name="gender" value="Laki-Laki" required>
+                <span>Laki-Laki</span>
+                <input type="radio" id="female" name="gender" value="Perempuan" required>
+                <span>Perempuan</span>
+                </div>
+    
+                <label for="message">Pesan:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+    
+                <button type="submit">Kirim</button>
+            </form>
+            <div class="submitted-data" id="submittedData">
+                <h3>Submitted Data</h3>
+                <div class="item" id="nameData"></div>
+                <div class="item" id="birthdateData"></div>
+                <div class="item" id="genderData"></div>
+                <div class="item" id="messageData"></div>
+                <button id="editData">Edit</button>
+                <button id="deleteData">Hapus</button>
+            </div>
+          <div class="map-container">
+            <iframe src="https://www.google.com/maps/embed?..." width="400" height="300" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+        </div>
+      </section>
+    <script src="js/script.js"></script>
+</body>
+</html>
